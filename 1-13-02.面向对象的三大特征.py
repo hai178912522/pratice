@@ -4,18 +4,27 @@
 # 多态：是一种技巧，提供代码的灵活度
 
 
-
 # 一个一个的语句
-def test():
-    a =23
-    a+= 3
-    print('hello')
-    print('good')
+def foo():
+    print('我是foo')
+def test(name,age):
+    print(f"姓名：{name},年龄：{age}")
+    a = 23
+    b = 2
+    a += 3
+    foo()
+    # print('hello')
+    # print('good')
+    # print(a)
+    return a + b
 
 
-class Person(object):
-    type = '人类'
-    def __init__(self):
-        pass
-    def run(self):
-        pass
+x = test('zhangsan',18)
+print(x)
+
+# class Person(object):
+#     type = '人类'
+#     def __init__(self):
+#         pass
+#     def run(self):
+#         pass
